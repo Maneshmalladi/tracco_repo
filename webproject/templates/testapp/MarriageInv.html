@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <style>
+        body{
+          
+          color:#1234cd;
+          background-image: url({% static 'images/recp1.jpg' %});
+          background-size: cover;          
+          background:rgba(102, 175, 202, 0.667);
+          text-align:center;
+       
+        }
+        .names{
+           
+          background-image: url({% static 'images/recp1.jpg' %});
+          background-size: cover; 
+          width:550px;
+
+          padding:2%;
+          margin-left:33%;
+
+
+          box-shadow:0 0 100px #1234cd;
+          
+        
+
+
+
+           
+           color:beige;
+           text-shadow: 1px 2px red;
+           background:rgba(102, 175, 202, 1.667);
+
+        }
+        .names img {
+          width:500px;
+          
+          opacity:.8;
+        }
+      #id1{
+        height:60px;
+      background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(38,38,162,1) 60%, rgba(0,212,255,1) 100%);
+
+    }
+    marquee{
+      display: flex;
+      color:white;
+      height:20px;
+      behavior:alternative;
+    }
+
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+
+<div  id="id1">
+ 
+   <a style=" margin-left:94%; position:relative; "  href="{% url 'logout' %}"> <input class="btn btn-success" type="button" value="Log Out"> </a>
+ 
+   <marquee  color="white" scrollamount="18">
+    <i>Sun Weds Moon Please attend on 24-April-2024</i>
+  </marquee>
+
+      
+</div>
+
+
+
+<br>
+
+  <div  class="names" >
+  <H1> WELCOME TO MARRIAGE  </H1>
+  <img  src="{% static 'images/recp1.jpg'%}">
+     <h2>  SUN </H2> <H3 > WEDS </H3> <H2 > MOON </H2>
+	
+     </div>
+
+	
+    
+    <br> <br>
+<h3> Photos required in below </h3>
+
+
+
+    <a href="/recp"  style="text-align:center;"> <button class="btn btn-primary" > Receiptions Pics</button> </a>
+
+    <a href="/bride"  ><button class="btn btn-primary" > Bride Pics</button> </a>
+   
+    <a href="/groom"   > <button class="btn btn-primary"> Groom Pics</button> </a>
+
+<br>
+<br>
+<h1 style="text-align:center;"> Venue</h1>
+<a href="https://maps.app.goo.gl/CAkrZukqQkmXSiNF7" > <img src="{% static 'images/grt1.jpg' %}" width="500" > </a> <br>
+
+<a href="https://maps.app.goo.gl/CAkrZukqQkmXSiNF7"  > loaction to Venue</a>
+
+
+
+<h1> Mohortham </h1>
+<p><u> 23-2-2024</u>  Saturday  <b>Time: </b> 4:23 AM </p>
+
+<h1> Dinner</h1>
+<b> Follow on 7:00 pm on Venue place only </b>
+
+</fieldset>
+</body>
+
+</html>

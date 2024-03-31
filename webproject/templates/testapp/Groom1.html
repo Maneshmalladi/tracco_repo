@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+
+</head>
+<body>
+    <h1> Groom photos</h1>
+    <ul >
+
+        <li> 
+             <a href="{% static 'images/groom1.jpg' %}">
+
+                 <img src="{% static 'images\groom1.jpg' %}" width="120" height="120">
+             </a>
+        </li>
+
+        <li>
+            <a href="{% static 'images/groom2.jpg' %}">
+                 <img src="{% static 'images/groom2.jpg' %}" width="120" height="120">
+          </a>
+        </li> 
+
+       <li>
+           <a href="{% static 'images/groom3.jpg' %}">
+             <img src="{% static 'images/groom3.jpg' %}" width="120" height="120">
+          </a>
+       </li> 
+ 
+     </ul><br>
+
+<button><a href="/inv"> Back to Main </a></button>
+</body>
+</html>

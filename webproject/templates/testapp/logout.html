@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+{% extends 'testapp/start.html' %}
+
+{% load  static %}
+{% block body_block %}
+
+
+<div class="jumbotron">
+    <div class="container">
+        <h1> THANKS FOR  TRACCO </h1>
+        <p> Please visit our wedding</p>
+        <a class="btn btn-success" href="{% url 'log' %}"> Log In</a>
+
+    </div>
+</div>
+
+
+{% endblock %}
+

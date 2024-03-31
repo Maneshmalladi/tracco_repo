@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+{% extends 'testapp/start.html' %}
+
+{% load  static %}
+{% block body_block %}
+    
+<style>
+    body{
+        background:black;
+        color:white;
+
+    }
+    
+    .about img{
+       
+        width:80%;
+        height:250px;
+        padding:10px;
+        
+        }
+    
+</style>
+    
+    <h1> WELECOME TO TRACCO</h1>
+
+    <div class="about">
+        <h3>Wedding Designs </h3>
+        <img src={% static "images/wedding1.jpg" %}>
+        <p> In <mark>TRACCO DESIGNS </mark> we can Provide lot of Wedding Invitations 
+            Digital wedding invitation cards are modern alternatives to traditional 
+            paper invitations, allowing couples to send elegant invites electronically.
+            They offer convenience, cost-effectiveness, and environmental sustainability
+            by eliminating paper waste. Digital cards can be customized with various designs, colors, and
+            interactive elements to reflect the couple's style and theme. They also facilitate 
+            easy RSVP management and guest communication through integrated features like links to 
+            wedding websites or RSVP forms. Additionally, they enable couples to track responses in real-time, 
+            streamline the invitation process, and easily share updates or changes with guests. Overall, digital
+            wedding invitation cards offer a contemporary approach to announcing and managing wedding 
+            celebrations.</p>
+
+    </div>
+
+    <br><br>
+
+
+
+
+{% endblock %}
